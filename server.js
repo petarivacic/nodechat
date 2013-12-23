@@ -6,6 +6,12 @@ var io = require('socket.io').listen(server);
 
 server.listen(5000);
 
+var port = process.env.PORT || 5000;
+server.listen(port, function() {
+    console.log("Listening on " + port);
+});
+
+
 // Routing
 app.get('/', function (req, res) {
   res.sendfile(__dirname + '/index.html');
