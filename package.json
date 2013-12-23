@@ -1,0 +1,25 @@
+{
+  "name": "nodechat",
+  "version": "0.0.0",
+  "description": "Simple Chat App Using Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petarivacic/nodechat"
+  },
+  "author": "Petar Ivacic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petarivacic/nodechat/issues"
+  },
+  "homepage": "https://github.com/petarivacic/nodechat",
+  "dependencies": {
+    "logfmt": "~0.18.1",
+    "express": "~3.4.7",
+    "jade": "~1.0.0"
+  }
+}
