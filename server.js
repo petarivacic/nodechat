@@ -4,13 +4,13 @@ var http = require('http');
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
 
-server.listen(5000);
 
 var port = process.env.PORT || 5000;
 server.listen(port, function() {
     console.log("Listening on " + port);
 });
 
+server.listen(port);
 
 // Routing
 app.get('/', function (req, res) {
